@@ -11,11 +11,12 @@ div, section ,p ,h1 ,h2, h3, span {
 }
 html {
   font-size: 1rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   min-height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
+  color: white;
 }
 html h1,
 html h2 {
@@ -37,17 +38,26 @@ body {
   width: 100vw;
   max-width: 100rem;
   background-color: red;
-  margin-top: 15rem;
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .buy-popup-btn-container {
   position: fixed;
-  height: 15rem;
+  height: 12rem;
   width: 100vw;
   max-width: 100rem;
   width: 100%;
-  background-color: green;
+  background-color: #8d0505;
   cursor: pointer;
+  z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
 }
 
 
@@ -59,11 +69,16 @@ body {
   justify-content: center;
   align-items: center;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.288);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
 }
 
 .visible {
   visibility: visible;
+}
+
+.overflow-none {
+  overflow: hidden;
 }
 
 .buy-popup-element {
@@ -71,7 +86,12 @@ body {
   height: 80vh;
   width: 90vw;
   max-width: 90rem;
-  background-color: rgba(0, 0, 0, 0.788);
+  background-color: rgb(23 60 95);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
 }
 
 .close {
@@ -79,52 +99,112 @@ body {
   height: auto;
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
+  padding: 2.3rem 2.3rem 0 0;
 }
 
 .close-sign {
-  background-color: red;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   font-size: 4rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 20%;
   user-select: none;
 }
 
+.link-item-container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  margin: 4rem 0;
+  box-sizing: border-box;
+  background-color: #b5b5b5;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.link-icon {
+  height: 10rem;
+  width: 11rem;
+  background-color: darkgreen;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: black;
+}
+
+.link-text {
+  font-size: 3rem;
+}
+
 .mini-book-general {
-  height: 40rem;
+  min-height: 35rem;
+  height: auto;
   width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mini-book-title {
+  width: 100%;
+  display: flex;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.mini-book-cointainer-for-blacken {
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 5rem 5rem;
+}
+
+.mini-book-text {
+  width: 100%;
+  font-size: 3rem;
 }
 
 .mini-book-a {
-  background-color: rgb(0, 119, 255);
+  background-color: rgb(0, 0, 0);
+  background-image: url('imgs/OIG2.jpeg');
 }
 
 .mini-book-b {
-  background-color: rgba(0, 81, 255, 0.432);
+  background-color: rgb(0, 0, 0);
+  background-image: url('imgs/OIG1.jpeg');
 }
 
 .mini-book-c {
-  background-color: rgb(0, 119, 255);
+  background-color: rgb(0, 0, 0);
+  background-image: url('imgs/OIG2.jpeg');
   
 }
 
 .mini-book-d {
-  background-color: rgba(0, 81, 255, 0.432);
+  background-color: rgb(0, 0, 0);
+  background-image: url('imgs/OIG1.jpeg');
   
 }
 
 .mini-book-e {
-  background-color: rgb(0, 119, 255);
+  background-color: rgb(0, 0, 0);
+  background-image: url('imgs/OIG2.jpeg');
   
 }
 
 .mini-book-f {
-  background-color: rgba(0, 81, 255, 0.432);
+  background-color: rgb(0, 0, 0);
+  background-image: url('imgs/OIG1.jpeg');
   
 }
 
 .mini-book-g {
-  background-color: rgb(0, 119, 255);
+  background-color: rgb(0, 0, 0);
+  background-image: url('imgs/OIG2.jpeg');
   
 }
