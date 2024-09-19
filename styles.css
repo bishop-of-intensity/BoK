@@ -13,7 +13,7 @@ html {
   font-size: 1rem;
   /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   color: white;
