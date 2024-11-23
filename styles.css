@@ -31,7 +31,7 @@ body {
   justify-content: center;
   height: 100%;
   background-color: rgb(43 43 43);
-  background-color: rgb(39 63 68);
+  background-color: #273f44;
 }
 
 .app-container {
@@ -51,6 +51,8 @@ body {
   max-width: 100rem;
   width: 100%;
   background-color: #8d0505;
+  /* background: linear-gradient(90deg, rgba(39,63,68,1) 5%, rgba(141,5,5,1) 20%, rgba(141,5,5,1) 50%, rgba(141,5,5,1) 75%, rgba(39,63,68,1) 95%); */
+  border-radius: 0 0 80rem 80rem;
   cursor: pointer;
   z-index: 30;
   display: flex;
@@ -121,7 +123,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 3rem;
-  margin: 4rem 0;
+  margin: 3rem 0;
   box-sizing: border-box;
   background-color: #b5b5b5;
   border-radius: 2rem;
@@ -132,13 +134,20 @@ body {
 .link-icon {
   height: 10rem;
   width: 11rem;
-  background-color: darkgreen;
+  background-color: white;
   border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 4rem;
   color: black;
+  border-radius: 20%;
+}
+
+#Capa_1 {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
 }
 
 .link-text {
@@ -255,4 +264,13 @@ body {
 .contact {
   text-decoration: none!important;
   color: white;
+}
+
+.book-type {
+  font-size: 3rem;
+}
+
+.book-type-not-first {
+  margin-top: 7rem;
+  margin-bottom: 2rem;
 }
